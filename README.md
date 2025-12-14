@@ -42,6 +42,7 @@ Additional endpoint to see the current wallet balances: http://localhost:8080/ap
 
 When the transactions are completed, the service publishes the events. There are 3 services listening the event, FraudDetectionService, NotificationService, RewardsService. When these services receive the event only log a confirmation message to the console.
 
+NotificationService receives the event and persists in database
 
 ### pseudo-code:
 
