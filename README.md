@@ -61,10 +61,8 @@ We are avoiding the mutual block, it means that both resources waits the same re
 
 // 5- Transfer between wallets.
 
-// 6- create a new transaction to insert the record. it uses UUID for Ids to identify the transaction. 
+// 6- creates and publishes the event.
 
-// 7- Persist new transaction and in case that the persistence fails, it rollbacks the math operations and it will go back the last balances.
-
-// 8- creates and publishes the event.
+// 7- The notification service receives the event and persists in the database.
 
 ```
