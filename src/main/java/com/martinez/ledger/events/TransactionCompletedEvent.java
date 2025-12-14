@@ -23,4 +23,12 @@ public class TransactionCompletedEvent {
     public BigDecimal getAmount() {
         return amount;
     }
+
+    public String getSourceWallet() {
+        return sourceWallet;
+    }
+
+    public String getTargetWallet() {
+        return targetWallet;
+    }
 }
